@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+int main()
+{
+	putchar('a');
+		printf("\n------------\n");
+	
+	
+	putchar('a123');//只取最后一个字符，并导致warning
+	printf("\n------------\n");
+	
+	
+	
+	putchar(65);
+		printf("\n------------\n");
+	putchar(128);
+		printf("\n------------\n");
+	putchar(12);
+		printf("\n------------\n");
+		//当putchar（）中为不加‘’的数字时，若该数字属于【0，127】，则输出对应的ascii码对应的字符    notice:ascii码存在不可输出的字符
+		
+		
+		
+		
+	char a = 'k';
+	char b = 97;
+	
+	putchar(a);
+	putchar(b);
+	
+		printf("\n------------\n");
+		
+		
+	char f;	
+		
+	f = getchar();//getchar()整体为一个函数，代表一个值
+	
+		
+		
+		putchar(f);
+		printf("\n------------\n");
+	int g;
+	
+	g = getchar();//多个getchar（）只按顺序读取一次 输入1和12，123试试
+	
+	
+	putchar(g);
+		printf("\n------------\n");
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
